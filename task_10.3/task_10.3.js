@@ -54,5 +54,4 @@ function chat() {
 function showMessage(message, className) {
 	divChat.insertAdjacentHTML('beforeend', `<p class="${(className == 'client') ? "chat-text" : (className == 'server') ? "chat-text-server" : "warn-text"}">${message}</p>`);
 }
-
 document.addEventListener("DOMContentLoaded", chat);
